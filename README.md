@@ -8,9 +8,17 @@
 This repository provides **working code** and complete description for Ring, Star and Hybrid Network Toplogies. The scripts are written in Tcl for NS which is used to simulate the behavior of networks and NAM is used as a visual aid showing how packets flow along the network.
 
 ## Ring Topology
+<p align="middle">
+  <img src="../master/images/ring.png"/>
+ </p>
+
 Write a Tcl script that forms a network consisting of 7 nodes, numbered from 0 to 6, forming a ring topology. The links have a 512Kbps bandwidth with 5ms delay and droptail queue. Set the routing protocol to DV (Distance vector). Send UDP packets from node 0 to node 3 with the rate of 100 packets/sec with each packet having a size of 1 Kilo Bytes. Start transmission at 0.02. Bring down the link between node 2 and node 3 at 0.4. Bring the dropped link back up at 1.0. Finish the transmission at 1.500. End the simulation at 2.0.
 
 ## Star Topology
+<p align="middle">
+  <img src="../master/images/star.png"/>
+ </p>
+
 You will have to create a star topolgy as given in the diagram below using ns2 to implement the Distance vector routing protocol. Assume all the devices in the following star topology as nodes and all the wires as duplex links having a capacity of 512Kb and a propagation delay of 10ms with a stochastic fair queue scheduling algorithm. You will have to send TCP data from H1 to H4 having red color. Also you will have to send UDP data with a rate of 256Kbps from H2 to H5 having blue color.
 Scheduling Events:
 	TCP Data starts at 0.1 and stops at 1.5
@@ -20,6 +28,10 @@ Scheduling Events:
 	Stop the simulation at 2.0
 
 ## Hybrid Topology (Combination of Ring and Star Topology)
+<p align="middle">
+  <img src="../master/images/hybrid.png"/>
+ </p>
+
 You will have to create a hybrid topology as given in the diagram below using statements in correct format from ns2 to implement the Distance vector routing protocol. Assume all the devices in the toplogy as nodes and all the wires as duplex links having a capacity of 1.5Mb and a propagation delay of 10ms with a stochastic fair queue scheduling algorithm. You must orient the nodes as shown in the topology below. You will have to send TCP data from p3 to p9 and from p5 to p12. You will have to send UDP data with a rate of 2200 packets/44 seconds with a single packet having a size of 1.5 Kilo Bytes from p13 to p6. Also send udp traffic from p1 to p8 such that 14800 packets are generated after each 37 seconds with each packet having a size of 5.5 Kilo Bytes.
 
 Scheduling Events:
@@ -30,9 +42,9 @@ Scheduling Events:
 - Stop the simulation at 2.0
 
 ## How to Run
-Just compile the topology you want to run file using the following command on Linux terminal or Windows Bash and run it (For client, obviously replace the server.c filename with client.c). Make sure the server is running before running any client.
+Just compile the topology file you want to run e.g star.tcl using the following command on Linux terminal. Make sure you have already installed NAM and ns2 on your Linux machine.
 
-``` ns example1.tcl ```
+``` ns star.tcl ```
 
 ----------
 
