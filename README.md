@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/harismuneer/Ring-Star-Hybrid-Topologies-TCL.svg?style=flat&label=Issues&maxAge=2592000)](https://www.github.com/harismuneer/Ring-Star-Hybrid-Topologies-TCL/issues)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black	)](#)
 
-This repository provides **working code and complete description for Ring, Star and Hybrid Network Toplogies**. The scripts are written in Tcl for NS which is used to simulate the behavior of networks and NAM is used as a visual aid showing how packets flow along the network.
+This repository provides **working code and complete description for Ring, Star and Hybrid Network Topologies**. The scripts are written in Tcl for NS which is used to simulate the behavior of networks and NAM is used as a visual aid showing how packets flow along the network.
 
 ## Ring Topology
 <p align="middle">
